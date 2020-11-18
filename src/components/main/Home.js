@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 
+import Features from '../features/Features';
+import StoryPictures from '../story/StoryPictures';
+import StoryContent from '../story/StoryContent';
+
 export default class Home extends Component {
   render() {
     return (
@@ -13,12 +17,12 @@ export default class Home extends Component {
        <div className="realtors">
          Top 3 realtors
        </div>
-       <section className="features">
-         features
-       </section>
-       <div className="story__pictures">
-         Pictures
-       </div>
+       <Features/>
+
+       {/* STORY COMPONENTS SIDE BY SIDE */}
+       <StoryPictures/>
+       <StoryContent/>
+       
        <div className="story__content">
          Content
        </div>
