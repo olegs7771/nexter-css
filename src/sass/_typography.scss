@@ -53,16 +53,16 @@
   }
 }
 
-//MARGIN-BOTTOM small,mideum,large,huge
+//MARGIN-BOTTOM small,mideum,large,x-large
 .mb-sm {
   margin-bottom: 2rem;
 }
-.mb-mm {
-  margin-bottom: 2rem;
+.mb-md {
+  margin-bottom: 3rem;
 }
-.mb-lm {
-  margin-bottom: 2rem;
+.mb-lg {
+  margin-bottom: 4rem;
 }
-.mb-hm {
-  margin-bottom: 2rem;
+.mb-xl {
+  margin-bottom: 8rem;
 }
