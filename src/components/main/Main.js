@@ -3,8 +3,9 @@ import React, { Component } from "react";
 import Features from "../features/Features";
 import StoryPictures from "../story/StoryPictures";
 import StoryContent from "../story/StoryContent";
+import Homes from "../homes/Homes";
 
-export default class Home extends Component {
+class Main extends Component {
   render() {
     return (
       <div className="container">
@@ -16,11 +17,12 @@ export default class Home extends Component {
         {/* STORY COMPONENTS SIDE BY SIDE */}
         <StoryPictures />
         <StoryContent />
-
-        <section className="homes">Homes</section>
+        <Homes />
         <section className="gallery">Gallery</section>
         <footer className="footer">Footer</footer>
       </div>
     );
   }
 }
+
+export default Main;
