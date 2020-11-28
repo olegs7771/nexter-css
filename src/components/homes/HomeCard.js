@@ -7,7 +7,7 @@ class HomeCard extends Component {
     return (
       <div className="home">
         <img src={img} alt={alt} className="home__img" />
-        <svg className="home__icon">
+        <svg className="home__like">
           <use href={sprite + "#icon-heart"} />
         </svg>
         <h5 className="home__name">{name}</h5>
@@ -16,21 +16,21 @@ class HomeCard extends Component {
           <svg className="home__icon">
             <use href={sprite + "#icon-map-pin"} />
           </svg>
-          <p className="homo__location-text">{location}</p>
+          <p className="home__location-text">{location}</p>
         </div>
         {/* ROOMS  */}
         <div className="home__rooms">
           <svg className="home__icon">
             <use href={sprite + "#icon-profile-male"} />
           </svg>
-          <p className="homo__rooms-text">{rooms} rooms</p>
+          <p className="home__rooms-text">{rooms} rooms</p>
         </div>
         {/* AREA  */}
         <div className="home__area">
           <svg className="home__icon">
-            <use href={sprite + "#icon-expand"} />
+            <use href={sprite + "#icon-flag"} />
           </svg>
-          <p className="homo__area-text">
+          <p className="home__area-text">
             {area}m<sup>2</sup>
           </p>
         </div>
@@ -39,9 +39,9 @@ class HomeCard extends Component {
           <svg className="home__icon">
             <use href={sprite + "#icon-key"} />
           </svg>
-          <p className="homo__price-text">${price}</p>
+          <p className="home__price-text">${price}</p>
         </div>
-        <button className="cta">Contact realtor</button>
+        <button className="btn home__btn">Contact realtor</button>
       </div>
     );
   }
