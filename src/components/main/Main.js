@@ -4,6 +4,7 @@ import Features from "../features/Features";
 import StoryPictures from "../story/StoryPictures";
 import StoryContent from "../story/StoryContent";
 import Homes from "../homes/Homes";
+import Gallery from "../gallery/Gallery";
 
 class Main extends Component {
   render() {
@@ -17,8 +18,10 @@ class Main extends Component {
         {/* STORY COMPONENTS SIDE BY SIDE */}
         <StoryPictures />
         <StoryContent />
+        {/* HOMES  */}
         <Homes />
-        <section className="gallery">Gallery</section>
+        {/* GALLERY  */}
+        <Gallery />
         <footer className="footer">Footer</footer>
       </div>
     );
