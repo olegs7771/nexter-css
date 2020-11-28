@@ -40,7 +40,7 @@ class Homes extends Component {
       {
         img: h4,
         alt: "Home 4",
-        name: "Gourgeus villa",
+        name: "Gorgeous villa",
         location: "USA",
         rooms: 3,
         area: 225,
