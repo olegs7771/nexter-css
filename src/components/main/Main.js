@@ -1,17 +1,22 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import Features from "../features/Features";
-import StoryPictures from "../story/StoryPictures";
-import StoryContent from "../story/StoryContent";
-import Homes from "../homes/Homes";
-import Gallery from "../gallery/Gallery";
+import Features from '../features/Features';
+import StoryPictures from '../story/StoryPictures';
+import StoryContent from '../story/StoryContent';
+import Homes from '../homes/Homes';
+import Gallery from '../gallery/Gallery';
+import Footer from '../footer/Footer';
+import Header from '../header/Header';
+import Sidebar from '../sidebar/Sidebar';
 
 class Main extends Component {
   render() {
     return (
       <div className="container">
-        <div className="sidebar">sidebar</div>
-        <header className="header">Header</header>
+        {/* SIDEBAR  */}
+        <Sidebar />
+        {/* HEADER  */}
+        <Header />
         <div className="realtors">Top 3 realtors</div>
         <Features />
 
@@ -22,7 +27,8 @@ class Main extends Component {
         <Homes />
         {/* GALLERY  */}
         <Gallery />
-        <footer className="footer">Footer</footer>
+        {/* FOOTER  */}
+        <Footer />
       </div>
     );
   }

@@ -1,4 +1,31 @@
 .footer {
   background-color: $color-secondary;
   grid-column: full-start/full-end;
+  padding: 8rem;
+}
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  &__link {
+    color: $color-grey-light-1;
+
+    padding: 3rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: 0.2s;
+    &:hover {
+      background-color: #18232f;
+      transform: translateY(-0.5rem);
+    }
+  }
+}
+.copyright {
+  text-align: center;
+  &__text {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: $color-grey-light-1;
+  }
 }
