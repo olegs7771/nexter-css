@@ -6,9 +6,24 @@
       rgba($color-secondary, 0.93)
     ),
     url(./../img/hero.jpeg);
+  background-position: center;
+  background-size: cover;
+  padding: 5rem;
+  padding-top: 4rem;
+
+  display: grid;
+  grid-template-rows: 1fr min-content 6rem 1fr;
+  grid-row-gap: 1.5rem;
+
   &__logo {
     height: 3rem;
+    justify-self: center;
   }
+  &__btn {
+    align-self: start;
+    justify-self: start;
+  }
+
   &__seenon-text {
   }
 
