@@ -7,7 +7,7 @@
 
 .nav-btn {
   border: none;
-  background-color: red;
+
   margin-top: 5rem;
   outline: none;
   display: inline-block;
@@ -20,6 +20,7 @@
     position: relative;
     background-color: $color-grey-light-1;
     outline: none;
+    opacity: 1;
 
     &::before {
       content: '';
@@ -48,5 +49,9 @@
   }
   &:hover &__icon::before {
     top: -2rem;
+  }
+
+  &:active &__icon {
+    opacity: 0;
   }
 }
