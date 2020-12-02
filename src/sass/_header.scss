@@ -29,6 +29,7 @@
   &__seenon-text {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
 
     font-size: 1.6rem;
     color: $color-grey-light-2;
@@ -36,16 +37,10 @@
     &::before,
     &::after {
       content: '';
-      height: 5px;
+      height: 1px;
       width: 100%;
-      color: white;
+      background-color: currentColor;
     }
-
-    // &::before {
-    // }
-    // &::after {
-    //   content: '';
-    // }
   }
 
   &__seenon-logos {

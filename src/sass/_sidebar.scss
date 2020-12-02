@@ -7,7 +7,9 @@
 
 .nav-btn {
   border: none;
-
+  // border: 1px solid black;
+  background-color: $color-primary;
+  height: 4rem;
   margin-top: 5rem;
   outline: none;
   display: inline-block;
@@ -20,27 +22,24 @@
     position: relative;
     background-color: $color-grey-light-1;
     outline: none;
-    opacity: 1;
 
-    &::before {
-      content: '';
-      position: absolute;
-      width: 5rem;
-      height: 5px;
-      top: -1.5rem;
-      left: 0;
-      background-color: $color-grey-light-1;
-      transition: 0.2s;
-    }
+    &::before,
     &::after {
       content: '';
       position: absolute;
       width: 5rem;
       height: 5px;
-      top: 1.5rem;
       background-color: $color-grey-light-1;
-      left: 0;
       transition: 0.2s;
+      left: 0;
+    }
+
+    &::before {
+      top: -1.5rem;
+    }
+    &::after {
+      content: '';
+      top: 1.5rem;
     }
   }
 
@@ -51,7 +50,15 @@
     top: -2rem;
   }
 
-  &:active &__icon {
-    opacity: 0;
+  &:focus &__icon {
+    background-color: $color-primary;
+  }
+  &:focus &__icon::before {
+    transform: rotate(135deg);
+    top: 0;
+  }
+  &:focus &__icon::after {
+    transform: rotate(-135deg);
+    top: 0;
   }
 }
