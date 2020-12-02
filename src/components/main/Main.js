@@ -7,6 +7,7 @@ import Homes from '../homes/Homes';
 import Gallery from '../gallery/Gallery';
 import Footer from '../footer/Footer';
 import Header from '../header/Header';
+import Realtors from '../realtors/Realtors';
 import Sidebar from '../sidebar/Sidebar';
 
 class Main extends Component {
@@ -15,9 +16,10 @@ class Main extends Component {
       <div className="container">
         {/* SIDEBAR  */}
         <Sidebar />
-        {/* HEADER  */}
+        {/* HEADER REALTORS SIDE BY SIDE */}
         <Header />
-        <div className="realtors">Top 3 realtors</div>
+        <Realtors />
+
         <Features />
 
         {/* STORY COMPONENTS SIDE BY SIDE */}
