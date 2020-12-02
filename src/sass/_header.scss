@@ -13,6 +13,8 @@
 
   display: grid;
   grid-template-rows: 1fr min-content 6rem 1fr;
+
+  justify-content: center;
   grid-row-gap: 1.5rem;
 
   &__logo {
@@ -25,11 +27,35 @@
   }
 
   &__seenon-text {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    font-size: 1.6rem;
+    color: $color-grey-light-2;
+
+    &::before,
+    &::after {
+      content: '';
+      height: 5px;
+      width: 100%;
+      color: white;
+    }
+
+    // &::before {
+    // }
+    // &::after {
+    //   content: '';
+    // }
   }
 
   &__seenon-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 3rem;
+    justify-items: center;
   }
   &__seenon-logo {
     height: 2.5rem;
+    filter: brightness(70%);
   }
 }
