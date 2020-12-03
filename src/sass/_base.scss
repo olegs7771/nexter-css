@@ -65,9 +65,9 @@ body {
       minmax(6rem, 1fr) [full-end];
   }
 
-  //800px
+  //800px  adding row for realtors after header
   @media only screen and(max-width:$bp-medium) {
-    grid-template-rows: min-content calc(100vh -4rem) min-content min-content 40vw repeat(
+    grid-template-rows: min-content 90vh min-content min-content 40vw repeat(
         3,
         min-content
       );

@@ -1,11 +1,14 @@
 .realtors {
   background-color: $color-secondary;
   grid-column: col-start 7 / full-end;
-
   display: grid;
   justify-content: center;
   align-content: center;
   grid-row-gap: 2rem;
+
+  @media only screen and(max-width:$bp-medium) {
+    grid-column: full-start/-1;
+  }
 
   &__heading {
     justify-self: center;
@@ -13,6 +16,10 @@
 
   &__list {
     list-style: none;
+    @media only screen and(max-width:$bp-medium) {
+      width: 100%;
+      display: flex;
+    }
   }
 
   &__item {
