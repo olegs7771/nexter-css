@@ -18,13 +18,13 @@ class Header extends Component {
           <img src={logo_bbc} alt="bbc logo" className="header__seenon-logo" />
           <img src={logo_bi} alt="logo bi" className="header__seenon-logo" />
           <img
-            src={logo_forbes}
-            alt="logo forbes"
+            src={logo_techcrunch}
+            alt="logo technocrunch"
             className="header__seenon-logo"
           />
           <img
-            src={logo_techcrunch}
-            alt="logo technocrunch"
+            src={logo_forbes}
+            alt="logo forbes"
             className="header__seenon-logo"
           />
         </div>

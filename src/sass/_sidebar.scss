@@ -3,6 +3,13 @@
   grid-column: sidebar-start/sidebar-end;
   grid-row: 1/-1;
   text-align: center;
+
+  @media only screen and(max-width:$bp-large) {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    padding: 2rem;
+    display: grid;
+  }
 }
 
 .nav-btn {
@@ -14,6 +21,10 @@
   outline: none;
   display: inline-block;
   cursor: pointer;
+
+  @media only screen and(max-width:$bp-large) {
+    margin-top: 0;
+  }
 
   &__icon {
     border: none;
